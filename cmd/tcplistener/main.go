@@ -9,12 +9,12 @@ import (
 )
 
 func main() {
-	listener, err := net.Listen("tcp", ":42069")
+	listener, err := net.Listen("tcp", ":10702")
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer listener.Close()
-	log.Println("Server is listening on :42069...")
+	log.Println("Server is listening on :10702...")
 
 	for {
 		conn, err := listener.Accept()
