@@ -17,7 +17,7 @@ import (
 	"httpfromtcp/internal/server"
 )
 
-const port = 42069
+const port = 10702
 
 func proxyHandler(w *response.Writer, req *request.Request) {
 	path := strings.TrimPrefix(req.RequestLine.RequestTarget, "/httpbin")
